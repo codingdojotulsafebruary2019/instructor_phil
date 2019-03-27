@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+        <div class="row text-white">
+            <div class="col-sm-6">
+                <div class="container">
+                    <form class="form">
+                        <div class="row">
+                            <label for="name">Name:</label>
+                            <input class="form-control mb-2 mr-sm-2" id="name" name="name">
+                        </div>
+                        <div class="row">
+                            <label for="location">Location:</label>
+                            <select class="form-control mb-2 mr-sm-2" name="location" id="location">
+                                <option selected disabled>Select a location</option>
+                                <option value="Tulsa">Tulsa</option>
+                                <option value="Burbank">Burbank</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="DC">Dc</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <button class="float-right btn btn-sm btn-info">Add Student</button>
+                        </div>
+                    </form>
+                    <form action="" class="form"></form>
+                    <form action="" class="form"></form>
+                    <form action="" class="form"></form>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="container text-white">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                <th>Name:</th>
+                                <th>Location:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for user in cohort.students %}
+                            <tr>
+                                <td>{{ user["name"] }}</td>
+                                <td>{{ user["location"] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
