@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log($(this));
+            $('button').click(function(){
+                console.log($(this));
+                var color = $(this).attr('id');
+                $(this).siblings('p').css('color', color);
+            });
+
+            $('#blue').click(function(){
+                console.log('I am a button event only triggered when the first button is clicked');
+            });
+
+            $('.addclass button').click(function(){
+                $('.addclass .paragraph').css('color', 'red');
+                $('#blue').addClass('purple');
+            });
+        });
+    </script>
+    <style>
+        div {
+            border-bottom: 2px solid black;
+        }
+        .purple {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="blue">click me</button>
+        <p>div one</p>
+    </div>
+    <div>
+        <button id="red">click me</button>
+        <p>div two</p>
+    </div>
+    <div>
+        <button id="green">click me</button>
+        <p>div three</p>
+    </div>
+    <div class="addclass">
+        <button>AddClass</button>
+        <p class="addclass paragraph">Change me</p>
+    </div>
+</body>
+</html>
