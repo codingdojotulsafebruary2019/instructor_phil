@@ -1,0 +1,11 @@
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/bin/Debug/netcoreapp2.1/DayOne.deps.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/bin/Debug/netcoreapp2.1/DayOne.runtimeconfig.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/bin/Debug/netcoreapp2.1/DayOne.runtimeconfig.dev.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/bin/Debug/netcoreapp2.1/DayOne.dll
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/bin/Debug/netcoreapp2.1/DayOne.pdb
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/obj/Debug/netcoreapp2.1/DayOne.csprojAssemblyReference.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/obj/Debug/netcoreapp2.1/DayOne.csproj.CoreCompileInputs.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/obj/Debug/netcoreapp2.1/DayOne.AssemblyInfoInputs.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/obj/Debug/netcoreapp2.1/DayOne.AssemblyInfo.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/obj/Debug/netcoreapp2.1/DayOne.dll
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DayOne/obj/Debug/netcoreapp2.1/DayOne.pdb
