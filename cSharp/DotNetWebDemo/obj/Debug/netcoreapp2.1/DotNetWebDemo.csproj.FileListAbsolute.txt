@@ -21,3 +21,5 @@
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DotNetWebDemo/obj/Debug/netcoreapp2.1/DotNetWebDemo.Views.pdb
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DotNetWebDemo/obj/Debug/netcoreapp2.1/DotNetWebDemo.csproj.CopyComplete
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DotNetWebDemo/obj/Debug/netcoreapp2.1/Razor/Views/Home/Success.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DotNetWebDemo/obj/Debug/netcoreapp2.1/Razor/Views/Home/UserPage.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/DotNetWebDemo/obj/Debug/netcoreapp2.1/Razor/Views/Home/New.g.cshtml.cs

@@ -1,0 +1,21 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    @model DotNetWebDemo.Models.User
+    <form action="/users" method="post">
+        <p>First Name: <input asp-for="FirstName"></p>
+        <span asp-validation-for="FirstName"></span>
+        <p>Last Name: <input asp-for="LastName"></p>
+        <span asp-validation-for="LastName"></span>
+        <p><input type="submit" value="Add"></p>
+    </form>
+</body>
+</html>
