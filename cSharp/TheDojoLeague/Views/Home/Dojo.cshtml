@@ -1,0 +1,36 @@
+﻿@model DojoDisplay
+<div class="row">
+    <div class="col-4">
+        <h1>All Dojos</h1>
+        <ul>
+            @{foreach(var dojo in @Model.AllDojos)
+                {
+                    <li>@dojo.Name, @dojo.Location</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-4">
+        <h1>Add Dojo</h1>
+        <form class="form" action="/dojos" method="post">
+            <div class="form-group">
+                <label asp-for="Dojo.Name"></label>
+                <input class="form-control" asp-for="Dojo.Name">
+                <span class="text-danger" asp-validation-for="Dojo.Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dojo.Location"></label>
+                <input class="form-control" asp-for="Dojo.Location">
+                <span class="text-danger" asp-validation-for="Dojo.Location"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dojo.Description"></label>
+                <textarea class="form-control" asp-for="Dojo.Description"></textarea>
+                <span class="text-danger" asp-validation-for="Dojo.Description"></span>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Add Dojo</button>
+            </div>
+        </form>
+    </div>
+</div>

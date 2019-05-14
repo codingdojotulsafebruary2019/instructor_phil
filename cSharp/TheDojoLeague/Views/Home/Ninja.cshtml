@@ -1,0 +1,58 @@
+@model NinjaDisplay
+<div class="row">
+    <div class="col-4">
+        <h1>All Ninjas</h1>
+        <ul>
+            @{foreach(var ninja in @Model.AllNinjas)
+                {
+                    <li>@ninja.Name: @ninja.Dojo.Name @ninja.Dojo.Location</li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-4">
+        <h1>Add Ninja</h1>
+        <form class="form" action="/ninjas" method="post">
+            <div class="form-group">
+                <label asp-for="Ninja.Name"></label>
+                <input class="form-control" asp-for="Ninja.Name">
+                <span class="text-danger" asp-validation-for="Ninja.Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ninja.Level"></label>
+                <select class="form-control" asp-for="Ninja.Level">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <span class="text-danger" asp-validation-for="Ninja.Level"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="Ninja.Dojo_Id"></label>
+                    <select class="form-control" asp-for="Ninja.Dojo_Id">
+                        @{foreach(Dojo dojo in @Model.AllDojos)
+                            {
+                                <option value="@dojo.Dojo_Id">@dojo.Name</option>
+                            }
+                        }
+                    </select>
+                    <span class="text-danger" asp-validation-for="Ninja.Dojo_Id"></span>
+                </div>
+            <div class="form-group">
+                <label asp-for="Ninja.Description"></label>
+                <textarea class="form-control" asp-for="Ninja.Description"></textarea>
+                <span class="text-danger" asp-validation-for="Ninja.Description"></span>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Add Ninja</button>
+            </div>
+        </form>
+    </div>
+</div>
