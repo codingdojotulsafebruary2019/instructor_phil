@@ -2,13 +2,24 @@
 <div class="row">
     <div class="col-4">
         <h1>All Dojos</h1>
-        <ul>
-            @{foreach(var dojo in @Model.AllDojos)
-                {
-                    <li>@dojo.Name, @dojo.Location</li>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Dojo Name</th>
+                    <th>Dojo Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{foreach(var dojo in @Model.AllDojos)
+                    {
+                        <tr>
+                            <td><a href="/dojo/@dojo.Dojo_Id">@dojo.Name</a></td>
+                            <td>@dojo.Location</td>
+                        </tr>
+                    }
                 }
-            }
-        </ul>
+            </tbody>
+        </table>
     </div>
     <div class="col-4">
         <h1>Add Dojo</h1>

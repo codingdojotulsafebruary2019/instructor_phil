@@ -25,3 +25,5 @@
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/TheDojoLeague/obj/Debug/netcoreapp2.1/TheDojoLeague.csproj.CopyComplete
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/TheDojoLeague/obj/Debug/netcoreapp2.1/Razor/Views/Home/Ninja.g.cshtml.cs
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/TheDojoLeague/obj/Debug/netcoreapp2.1/Razor/Views/Home/Dojo.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/TheDojoLeague/obj/Debug/netcoreapp2.1/Razor/Views/Home/ShowDojo.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/TheDojoLeague/obj/Debug/netcoreapp2.1/Razor/Views/Home/ShowNinja.g.cshtml.cs

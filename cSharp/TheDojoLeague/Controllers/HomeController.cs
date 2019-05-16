@@ -74,9 +74,25 @@ namespace TheDojoLeague.Controllers
                 // display the validation errors
                 NinjaDisplay.AllNinjas = _ninjaFactory.FindAllNinjas();
                 NinjaDisplay.AllDojos = _dojoFactory.FindAllDojos();
-                
+
                 return View("Ninja", NinjaDisplay);
             }
+        }
+
+        [HttpGet("ninja/{ninja_id}")]
+        public IActionResult ShowNinja(int ninja_id)
+        {
+            var ninja = _ninjaFactory.FindNinja(ninja_id);
+            var dojo = _dojoFactory.FindOneById(ninja.Dojo_Id);
+            ninja.Dojo = dojo;
+            return View(ninja);
+        }
+
+        [HttpGet("dojo/{dojo_id}")]
+        public IActionResult ShowDojo(int dojo_id)
+        {
+            Dojo dojo = _dojoFactory.FindDojo(dojo_id);
+            return View(dojo);
         }
 
         [HttpGet("")]

@@ -43,5 +43,15 @@ namespace TheDojoLeague.Factory
                 dbConnection.Execute(query, ninja);
             }
         }
+
+        public Ninja FindNinja(int ninja_id)
+        {
+            using(IDbConnection dbConnection = Connection)
+            {
+                dbConnection.Open();
+                string query = @"SELECT ninjas.ninja_id, ninjas.name, ninjas.level, ninjas.description, ninjas.dojo_id FROM ninjas WHERE ninjas.ninja_id = @Id";
+                return dbConnection.QueryFirst<Ninja>(query, new {ID=ninja_id});
+            }
+        }
     }
 }

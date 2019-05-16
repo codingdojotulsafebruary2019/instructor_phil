@@ -40,5 +40,40 @@ namespace TheDojoLeague.Factory
                 dbConnection.Execute(query, dojo);
             }
         }
+
+        public Dojo FindDojo(int dojo_id)
+        {
+            using(IDbConnection dbConnection = Connection)
+            {
+                dbConnection.Open();
+                var query =
+                @"
+                SELECT * FROM dojos WHERE dojo_id = @Id;
+                SELECT * FROM ninjas WHERE dojo_id = @Id;
+                ";
+        
+                using (var multi = dbConnection.QueryMultiple(query, new {Id = dojo_id}))
+                {
+                    Dojo dojo = multi.Read<Dojo>().Single();
+                    dojo.Ninjas = multi.Read<Ninja>().ToList();
+                    return dojo;
+                }
+            }
+        }
+
+        public Dojo FindOneById(int dojo_id)
+        {
+            using(IDbConnection dbConnection = Connection)
+            {
+                dbConnection.Open();
+                var query =
+                @"
+                SELECT * FROM dojos WHERE dojo_id = @Id;
+                ";
+        
+                return dbConnection.QuerySingle<Dojo>(query, new {Id = dojo_id});
+            }
+        }
+
     }
 }
