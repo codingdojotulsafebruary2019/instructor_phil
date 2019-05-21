@@ -1,2 +1,24 @@
-﻿<h1>Index View</h1>
-<p>Get to building things!</p>
+﻿<div class="col-4 col-offset-4">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Number of Products</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{foreach(var user in @Model)
+                {
+                    <tr>
+                        <td>@user.Name</td>
+                        <td>@user.Email</td>
+                        <td>@user.Age</td>
+                        <td><a href="/users/@user.UserId">Products</a></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

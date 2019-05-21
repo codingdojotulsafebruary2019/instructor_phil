@@ -1,0 +1,23 @@
+@{
+    User user = Model;
+}
+
+<div>
+    <h1>@user.Name</h1>
+    <h6>User Items</h6>
+    <ul>
+        @{foreach(var p in user.Products)
+            {
+                <li>@p.Name</li>
+            }
+        }
+    </ul>
+    <h6>User Cart</h6>
+    <ul>
+        @{foreach(var cartItem in user.CartItems)
+            {
+                <li>@cartItem.Product.Name</li>
+            }
+        }
+    </ul>
+</div>

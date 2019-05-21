@@ -2,14 +2,16 @@
 using IntroToEntity.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IntroToEntity.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20190521185706_AddCart")]
+    partial class AddCart
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,7 +33,7 @@ namespace IntroToEntity.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserItems");
+                    b.ToTable("Cart");
                 });
 
             modelBuilder.Entity("IntroToEntity.Models.Product", b =>

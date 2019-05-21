@@ -15,9 +15,12 @@ namespace IntroToEntity.Models
 
         public List<Product> Products {get; set;}
 
+        public List<Cart> CartItems {get; set;}
+
         public User()
         {
             Products = new List<Product>();
+            CartItems = new List<Cart>();
         }
     }
 }

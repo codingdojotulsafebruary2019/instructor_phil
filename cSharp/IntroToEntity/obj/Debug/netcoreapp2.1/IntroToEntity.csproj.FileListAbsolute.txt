@@ -24,3 +24,7 @@
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/IntroToEntity.dll
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/IntroToEntity.pdb
 /Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/IntroToEntity.csproj.CopyComplete
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/Razor/Views/Home/Show.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/Razor/Views/Home/Cart.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/Razor/Views/Home/NewProduct.g.cshtml.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_february_2019/cSharp/IntroToEntity/obj/Debug/netcoreapp2.1/Razor/Views/Home/NewUser.g.cshtml.cs

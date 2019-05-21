@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace IntroToEntity.Models
@@ -12,5 +13,12 @@ namespace IntroToEntity.Models
         public int UserId { get; set; }
 
         public User User { get; set; }
+
+        public List<Cart> CartItems {get; set;}
+
+        public Product()
+        {
+            CartItems = new List<Cart>();
+        }
     }
 }

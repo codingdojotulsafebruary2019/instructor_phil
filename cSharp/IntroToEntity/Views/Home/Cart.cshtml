@@ -1,0 +1,29 @@
+@model CartForm;
+
+<div>
+    <form action="/cart" method="post">
+        <div class="form-group">
+            <label asp-for="Cart.UserId">User</label>
+            <select asp-for="Cart.UserId" class="form-control">
+                @{foreach(var user in Model.AllUsers)
+                    {
+                        <option value="@user.UserId">@user.Name</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cart.ProductId">Product</label>
+            <select asp-for="Cart.ProductId" class="form-control">
+                @{foreach(var product in Model.AllProducts)
+                    {
+                        <option value="@product.ProductId">@product.Name</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info">Add Item to Cart</button>
+        </div>
+    </form>
+</div>
